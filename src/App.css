@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --background: #F9FAF5;
+  --foreground: #FFFFFF;
+  --green: #3B8A6E;
+  --lightgreen: #D2F2E6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: var(--background);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.green-background{
+  background-color: var(--lightgreen);
+  color: var(--green);
+  font-size: 9px;
+  font-weight: 800;
+  padding: 7px 20px;
+  border-radius: 10px;
+  /* min-width: 7.8rem; */
+  max-height: 2rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dark-text{
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards{
+  background-color: var(--foreground);
+  padding: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.phone-img{
+  height: 8rem;
+}
+
+.text-head{
+  color: rgb(133, 133, 133);
+  font-size: 13px;
+}
+
+.text-body{
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.text-green{
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.table-box{
+  border: 1px solid rgb(200, 200, 200);
+  margin-top: 10px;
+}
+
+table{
+  font-size: 13px;
+}
+
+td{
+  
+  color: rgb(133, 133, 133);
+}
+
+.text-data{
+  font-weight: 500;
+}
+
+.paypal{
+  width: 60px;
 }
